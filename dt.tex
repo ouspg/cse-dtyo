@@ -22,6 +22,8 @@
 \usepackage{boxedminipage}
 \usepackage{subfigure}
 \usepackage{multirow}
+\usepackage{amsfonts}
+\usepackage{xcolor}
 \tolerance=500
 
 %\usepackage[a4paper,margin=2.5cm,dvips]{geometry}
@@ -40,7 +42,6 @@
 
 %\selectlanguage{finnish}
 
-
 \otsikko{Suomenkielinen nimi}
 \title{English title}
 
@@ -48,25 +49,23 @@
 \sukunimi{Teekkari}
 \valvoja{prof. Juha Röning}
 \koulutusohjelma{information} % {information | electrical}
-\vuosi{2013}
+\vuosi{2016}
 \tyo{Master} % {Bachelor | Master}
 \kieli{english} % {finnish | english}
 
 \begin{document}
 
 \begin{titlepage}
-	%\vspace*{10 mm}
-	\centering{\includegraphics*[width=0.5\textwidth]{uni_logo}\\}
-	{{\small FACULTY OF INFORMATION TECHNOLOGY AND ELECTRICAL ENGINEERING}\\}
+	\centering{\includegraphics*[width=0.3\textwidth]{uni_logo}\\}
+	{\sffamily\fontsize{9}{1pt}\selectfont FACULTY OF INFORMATION TECHNOLOGY AND ELECTRICAL ENGINEERING\\}
+	%{\sffamily\fontsize{9}{1pt}\selectfont TIETO- JA SÄHKÖTEKNIIKAN TIEDEKUNTA\\}
 	\vspace{65 mm}
-	{\textbf{\LARGE \getfirstname\ \getlastname }\\}
+	{\textbf{\fontsize{16}{19pt}\selectfont \getfirstname\ \getlastname }\\}
 	\vspace{15 mm}
-	{\textbf{\LARGE FIRST FRONT PAGE TITLE LINE\\ADDITIONAL IF NEEDED\\}}
-	\vspace{70 mm}
-	{\large {Master's Thesis}\\}
-	{\large {Degree Programme in Computer Science and Engineering}\\}
-	{\large {Month 20xx}\\}
-	%\maketitle
+	{\textbf{\fontsize{18}{22pt}\selectfont FIRST FRONT PAGE TITLE LINE\\ADDITIONAL IF NEEDED\\}}
+	\vspace{60 mm}
+	{\fontsize{14}{17}\selectfont Master's Thesis \\Degree Programme in Computer Science and Engineering \\ Month 20xx\\}
+	%{\fontsize{14}{17}\selectfont Diplomityö \\Tietotekniikan tutkinto-ohjelma \\ Month 20xx\\}
 \end{titlepage}
 
 \selectlanguage{english}
@@ -75,6 +74,7 @@
 This is a sample abstract.
 
 \keywords sample, keywords
+
 \end{abstract}
 
 \selectlanguage{finnish}
