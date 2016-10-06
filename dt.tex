@@ -49,24 +49,58 @@
 \sukunimi{Teekkari}
 \valvoja{prof. Juha Röning}
 \koulutusohjelma{information} % {information | electrical}
-\vuosi{2016}
+\vuosi{20xx}
 \tyo{Master} % {Bachelor | Master}
 \kieli{english} % {finnish | english}
 
 \begin{document}
 
-\begin{titlepage}
-	\centering{\includegraphics*[width=0.3\textwidth]{uni_logo}\\}
-	{\sffamily\fontsize{9}{1pt}\selectfont FACULTY OF INFORMATION TECHNOLOGY AND ELECTRICAL ENGINEERING\\}
-	%{\sffamily\fontsize{9}{1pt}\selectfont TIETO- JA SÄHKÖTEKNIIKAN TIEDEKUNTA\\}
-	\vspace{65 mm}
-	{\textbf{\fontsize{16}{19pt}\selectfont \getfirstname\ \getlastname }\\}
-	\vspace{15 mm}
-	{\textbf{\fontsize{18}{22pt}\selectfont FIRST FRONT PAGE TITLE LINE\\ADDITIONAL IF NEEDED\\}}
-	\vspace{60 mm}
-	{\fontsize{14}{17}\selectfont Master's Thesis \\Degree Programme in Computer Science and Engineering \\ Month 20xx\\}
-	%{\fontsize{14}{17}\selectfont Diplomityö \\Tietotekniikan tutkinto-ohjelma \\ Month 20xx\\}
-\end{titlepage}
+%% Computer science and engineering
+%\iffalse     % comment multiple lines with \iffalse, \fi -pair
+    \begin{titlepage}
+        \centering{\includegraphics*[width=0.3\textwidth]{uni_logo}\\}
+        {\sffamily\fontsize{9}{1pt}\selectfont FACULTY OF INFORMATION TECHNOLOGY AND ELECTRICAL ENGINEERING\\}
+        %{\sffamily\fontsize{9}{1pt}\selectfont TIETO- JA SÄHKÖTEKNIIKAN TIEDEKUNTA\\}
+        \vspace{65 mm}
+        {\textbf{\fontsize{16}{19pt}\selectfont \getfirstname\ \getlastname }\\}
+        \vspace{15 mm}
+        {\textbf{\fontsize{18}{22pt}\selectfont FIRST FRONT PAGE TITLE LINE\\ADDITIONAL IF NEEDED\\}}
+        \vspace{60 mm}
+        {\fontsize{14}{17}\selectfont Master's Thesis \\Degree Programme in Computer Science and Engineering \\ Month 20xx\\}
+        %{\fontsize{14}{17}\selectfont Diplomityö \\Tietotekniikan tutkinto-ohjelma \\ Month 20xx\\}
+    \end{titlepage}
+%\fi
+
+%% Electrical engineering
+\iffalse     % comment multiple lines with \iffalse, \fi -pair
+    \begin{titlepage}
+        \centering{\includegraphics*[width=0.25\textwidth]{uni_logo}\\}
+        {\sffamily\fontsize{8}{10}\selectfont DEGREE PROGRAMME IN ELECTRICAL ENGINEERING\\}
+        %{\sffamily\fontsize{8}{10}\selectfont SÄHKÖTEKNIIKAN KOULUTUSOHJELMA\\}
+        \vspace{50 mm}
+        {\textbf{\fontsize{20}{24}\selectfont MASTER'S THESIS }\\}
+        %{\textbf{\fontsize{20}{24}\selectfont DIPLOMITYÖ }\\}
+        \vspace{18 pt}
+        {\textbf{\fontsize{18}{22}\selectfont TITLE IS WRITTEN HERE \\ ADDITIONAL LINE IF NEEDED \\}}
+        \vspace{60 mm}
+        {\fontsize{12}{15}\selectfont
+            \begin{table}[ht]
+                \centering
+                \begin{tabular}{p{4.5cm}l}
+                    Author & \getfirstname\ \getlastname \\ \\
+                    %Tekijä & Etunimi sukunimi \\ \\
+                    Supervisor & Firstname Surname \\ \\
+                    %Valvoja & Etunimi sukunimi \\ \\
+                    Second Examiner & Firstname Surname \\ \\
+                    %Toinen tarkastaja & Etunimi sukunimi \\ \\
+                    (Technical advisor & Firstname Surname) \\
+                    %(Työn tekninen ohjaaja & Etunimi sukunimi) \\
+            \end{tabular}
+        \end{table}}
+        {\fontsize{12}{15}\selectfont Month 20xx}
+    \end{titlepage}
+\fi
+
 
 \selectlanguage{english}
 
@@ -118,6 +152,7 @@ The template was updated during the summer of 2013 by Juha Kylmänen.
 %Johdanto
 \chapter{Introduction}
 \sivunumerot
+\thispagestyle{empty}
 \input{introduction} % ./introduction.tex
 
 \chapter{Implementing something}
