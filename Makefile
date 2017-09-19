@@ -14,4 +14,4 @@ pdf: dt.tex di.bib
 	fi
 
 clean:
-	rm abbreviations_sorted.tex thesis.pdf dt.toc dt.log dt.blg dt.bbl dt.aux
+	rm -f abbreviations_sorted.tex thesis.pdf dt.toc dt.log dt.blg dt.bbl dt.aux dt.out
