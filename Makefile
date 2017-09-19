@@ -1,7 +1,7 @@
 pdf: dt.tex di.bib
 	@cat abbreviations.tex |sort > abbreviations_sorted.tex	
 	pdflatex dt.tex
-	bibtex dt
+	biber dt
 	pdflatex dt.tex
 	pdflatex dt.tex
 
@@ -14,4 +14,4 @@ pdf: dt.tex di.bib
 	fi
 
 clean:
-	rm -f abbreviations_sorted.tex thesis.pdf dt.toc dt.log dt.blg dt.bbl dt.aux dt.out
+	rm -f abbreviations_sorted.tex thesis.pdf dt.toc dt.log dt.blg dt.bbl dt.aux dt.out dt.bcf dt.run.xml

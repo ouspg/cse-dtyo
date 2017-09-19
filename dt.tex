@@ -24,6 +24,8 @@
 \usepackage{multirow}
 \usepackage{amsfonts}
 \usepackage{xcolor}
+\usepackage[style=ieee, urldate=iso8601, date=iso8601, backend=biber]{biblatex}
+\addbibresource{di.bib}
 \tolerance=500
 
 %\usepackage[a4paper,margin=2.5cm,dvips]{geometry}
@@ -132,6 +134,5 @@ The template was updated during the summer of 2013 by Juha Kylmänen.
 \chapter{Conclusion}
 \input{conclusion}  % ./conclusion.tex
 
-\bibliographystyle{di}
-\bibliography{di}
+\printbibliography[title=REFERENCES, heading=bibnumbered]
 \end{document}
