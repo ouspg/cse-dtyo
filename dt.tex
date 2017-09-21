@@ -5,7 +5,7 @@
 %
 
 \documentclass[a4paper, 12pt,titlepage]{dithesis}
-\usepackage[english,finnish]{babel}
+\usepackage[english,australian,finnish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}  
 \usepackage{times}
@@ -134,5 +134,7 @@ The template was updated during the summer of 2013 by Juha Kylmänen.
 \chapter{Conclusion}
 \input{conclusion}  % ./conclusion.tex
 
+% Use Australian locale in bibliography to change the date format to Day Month Year.
+\selectlanguage{australian}
 \printbibliography[title=REFERENCES, heading=bibnumbered]
 \end{document}
