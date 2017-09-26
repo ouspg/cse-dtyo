@@ -5,7 +5,7 @@
 %
 
 \documentclass[a4paper, 12pt,titlepage]{dithesis}
-\usepackage[english,finnish]{babel}
+\usepackage[english,australian,finnish]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}  
 \usepackage{times}
@@ -24,6 +24,12 @@
 \usepackage{multirow}
 \usepackage{amsfonts}
 \usepackage{xcolor}
+\usepackage[style=ieee, minnames=1, maxnames=2, urldate=long, dashed=false]{biblatex}
+% Fix “visited on” string to “Accessed:” in urldate
+\DefineBibliographyStrings{australian}{%
+      urlseen = {Accessed:},
+}
+\addbibresource{di.bib}
 \tolerance=500
 
 %\usepackage[a4paper,margin=2.5cm,dvips]{geometry}
@@ -132,6 +138,7 @@ The template was updated during the summer of 2013 by Juha Kylmänen.
 \chapter{Conclusion}
 \input{conclusion}  % ./conclusion.tex
 
-\bibliographystyle{di}
-\bibliography{di}
+% Use Australian locale in bibliography to change the date format to Day Month Year.
+\selectlanguage{australian}
+\printbibliography[title=REFERENCES, heading=bibnumbered]
 \end{document}
